@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "@ctrl/tinycolor": "^3.4.0",
+    "@iconify/icons-ic": "^1.1.5",
+    "@iconify/react": "^1.1.4",
     "gatsby": "^3.6.2",
     "gatsby-plugin-gatsby-cloud": "^2.7.1",
     "gatsby-plugin-manifest": "^3.7.1",
