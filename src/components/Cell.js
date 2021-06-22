@@ -187,13 +187,22 @@ Cell.propTypes = {
 
 export function CellSvg({
   shape = "circle",
+  width = DEFAULT_SIZE,
+  height = DEFAULT_SIZE,
   color = "red",
   color2 = "blue",
   rotate = 0,
 }) {
   return (
-    <svg width={DEFAULT_SIZE} height={DEFAULT_SIZE}>
-      <Cell shape={shape} color={color} color2={color2} rotate={rotate} />
+    <svg width="100%" viewBox={`0 0 ${width} ${height}`}>
+      <Cell
+        shape={shape}
+        color={color}
+        color2={color2}
+        rotate={rotate}
+        width={width}
+        height={height}
+      />
     </svg>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
-import { SHAPES } from "../core/const.mjs";
-import { pickRandom } from "../core/utils";
+import { SHAPES } from "../core/const";
+// import { pickRandom } from "../core/utils";
 import generateArtwork from "../core/generateArtwork";
 import { ArtworkSvg as Artwork } from "../components/Artwork";
 
@@ -12,7 +12,7 @@ export default {
     shape: {
       options: SHAPES,
       control: { type: "select" },
-      default: pickRandom(SHAPES),
+      // default: pickRandom(SHAPES),
     },
     rows: { control: { type: "range", min: 2, max: 32 } },
     columns: { control: { type: "range", min: 2, max: 32 } },

@@ -1,11 +1,10 @@
 import lodash from "lodash";
-import TinyColor from "@ctrl/tinycolor";
 
-import { pickRandom, dateString } from "./utils.mjs";
+import utils from "./utils.js";
 import { SHAPES } from "./const.mjs";
 
+const { pickRandom, dateString, generateColors } = utils;
 const { random, range } = lodash;
-const randomColor = TinyColor.random;
 
 const MIN_ROWS = 8;
 const MAX_ROWS = 8;
@@ -19,10 +18,7 @@ export default function generateArtwork(options) {
   const rows = random(MIN_ROWS, MAX_ROWS);
   const columns = rows;
   const effectiveShape = (options && options.shape) || pickRandom(SHAPES);
-  const colors = range(random(MIN_COLORS, MAX_COLORS)).map(() =>
-    randomColor().toHexString()
-  );
-
+  const colors = generateColors(random(MIN_COLORS, MAX_COLORS));
   const cells = range(rows * columns).map(() => ({
     shape: effectiveShape,
     rotate: random(MIN_ROTATION, MAX_ROTATION),
