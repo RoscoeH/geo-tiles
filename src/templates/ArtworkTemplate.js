@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import { ArtworkSvg as Artwork } from "../components/Artwork";
 // import Layout from "../components/layout"
 
 export default function ArtworkTemplate({
@@ -14,11 +15,7 @@ export default function ArtworkTemplate({
     <div>
       <p>{columns}</p>
       <p>{rows}</p>
-      <ul>
-        {cells.map((cell) => (
-          <li>{`${cell.shape} - ${cell.color}`}</li>
-        ))}
-      </ul>
+      <Artwork />
     </div>
     // </Layout>
   );

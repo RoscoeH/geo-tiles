@@ -1,25 +1,26 @@
 import React from "react";
-import { random as randomColor } from "@ctrl/tinycolor";
-import { range, random } from "lodash";
 
-import { pickRandom } from "../core/utils";
-import generateArtwork from "../core/generateArtwork";
-import { ArtworkSvg as Artwork, SHAPES } from "../components/Artwork";
+import { SHAPES, ROTATIONS } from "../core/const";
+import { CellSvg as Cell } from "./Cell";
 
 export default {
-  title: "Artwork",
-  component: Artwork,
+  title: "Cell",
+  component: Cell,
   argTypes: {
     shape: {
-      control: { type: "select", options: SHAPES },
-      default: pickRandom(SHAPES),
+      control: {
+        type: "select",
+      },
+      options: SHAPES,
     },
-    rows: { control: { type: "range", min: 2, max: 32 } },
-    columns: { control: { type: "range", min: 2, max: 32 } },
+    rotate: {
+      control: { type: "select" },
+      options: ROTATIONS,
+    },
   },
 };
 
-const Template = (args) => <Artwork {...args} colors={randomColors()} />;
+const Template = (args) => <Cell {...args} />;
 
 export const Square = Template.bind({});
 Square.args = { shape: "square" };
@@ -50,3 +51,6 @@ SmallSquare.args = { shape: "smallSquare" };
 
 export const SmallCircle = Template.bind({});
 SmallCircle.args = { shape: "smallCircle" };
+
+export const RotateTriangle = Template.bind({});
+RotateTriangle.args = { shape: "triangle", rotate: 1 };

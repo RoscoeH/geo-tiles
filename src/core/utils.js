@@ -1,5 +1,4 @@
-import lodash from "lodash";
-const { random } = lodash;
+import random from "lodash/random";
 
 export function pickRandom(array) {
   return array[random(array.length - 1)];
