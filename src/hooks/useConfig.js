@@ -7,6 +7,10 @@ export function useConfig() {
         siteMetadata {
           title
           description
+          navigation {
+            label
+            to
+          }
         }
       }
     }

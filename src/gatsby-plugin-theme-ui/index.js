@@ -10,7 +10,7 @@ const theme = {
     dark: "#000000",
     text: "#333333",
     background: "#ffffff",
-    primary: "#ffc6ff",
+    primary: "blue",
     secondary: "#9bf6ff",
     muted: "rgba(255, 255, 255, 0.05)",
   },
@@ -44,6 +44,7 @@ const theme = {
       lineHeight: "heading",
       fontWeight: "body",
       fontSize: 7,
+      my: 3,
     },
     h2: {
       color: "text",
@@ -129,21 +130,6 @@ const theme = {
     },
   },
   links: {
-    heading: {
-      color: "primary",
-      fontFamily: "heading",
-      fontSize: 4,
-      textDecoration: "none",
-      boxShadow: (t) => `inset 0 -2px 0 ${t.colors.primary}`,
-      "&:hover": {
-        color: "secondary",
-        boxShadow: (t) => `inset 0 -2px 0 ${t.colors.secondary}`,
-      },
-      "&:active": {
-        color: "light",
-        boxShadow: (t) => `inset 0 -2px 0 ${t.colors.light}`,
-      },
-    },
     title: {
       color: "primary",
       fontFamily: "heading",

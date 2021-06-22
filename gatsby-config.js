@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "GeoTiles",
+    description: "New artwork daily!",
+    navigation: [
+      { label: "Home", to: "/" },
+      { label: "About", to: "/about" },
+    ],
   },
   plugins: [
     "gatsby-plugin-theme-ui",
