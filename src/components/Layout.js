@@ -1,10 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 
-export default function Layout({ children }) {
+import { useConfig } from "../hooks/useConfig";
+import Header from "./Header";
+
+export default function Layout({ title, children }) {
+  const { title } = useConfig();
   return (
     <div>
-      <h1>Layout</h1>
+      <Header title={title} />
       <main sx={{ maxWidth: 420, m: "0 auto", px: 2 }}>{children}</main>
     </div>
   );

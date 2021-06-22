@@ -4,7 +4,7 @@ import { SHAPES, ROTATIONS } from "../core/const.mjs";
 import { CellSvg as Cell } from "./Cell";
 
 export default {
-  title: "Cell",
+  title: "Components/Cell",
   component: Cell,
   argTypes: {
     shape: {

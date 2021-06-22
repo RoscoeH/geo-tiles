@@ -6,7 +6,7 @@ import generateArtwork from "../core/generateArtwork";
 import { ArtworkSvg as Artwork } from "../components/Artwork";
 
 export default {
-  title: "Artwork",
+  title: "Components/Artwork",
   component: Artwork,
   argTypes: {
     shape: {
