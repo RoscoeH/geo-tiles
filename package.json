@@ -4,6 +4,7 @@
   "private": true,
   "description": "GeoTiles",
   "author": "Roscoe Hart",
+  "type": "module",
   "keywords": [
     "gatsby"
   ],

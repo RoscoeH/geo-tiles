@@ -5,14 +5,20 @@ import { graphql } from "gatsby";
 
 export default function ArtworkTemplate({
   data: {
-    artworksJson: { rows, columns },
+    artworksJson: { rows, columns, cells },
   },
 }) {
+  console.log(cells);
   return (
     // <Layout>
     <div>
       <p>{columns}</p>
       <p>{rows}</p>
+      <ul>
+        {cells.map((cell) => (
+          <li>{`${cell.shape} - ${cell.color}`}</li>
+        ))}
+      </ul>
     </div>
     // </Layout>
   );
@@ -22,6 +28,11 @@ export const query = graphql`
     artworksJson(fields: { slug: { eq: $slug } }) {
       rows
       columns
+      cells {
+        shape
+        color
+        rotate
+      }
     }
   }
 `;
