@@ -1,4 +1,5 @@
-import React from "react";
+/** @jsx jsx */
+import { jsx } from "theme-ui";
 import PropTypes from "prop-types";
 import { range } from "lodash";
 
@@ -52,21 +53,13 @@ Artwork.propTypes = {
   ),
 };
 
-export const ArtworkSvg = ({
-  size = 64,
-  rows = 8,
-  columns = 8,
-  shape = "circle",
-  cells,
-}) => {
+export const ArtworkSvg = ({ size = 64, rows = 8, columns = 8, cells }) => {
   const cellWidth = size;
   const cellHeight = size;
   return (
     <svg
-      width={cellWidth * columns}
-      height={cellHeight * rows}
+      width="100%"
       viewBox={`0 0 ${cellWidth * columns} ${cellHeight * rows}`}
-      style={{ border: "1px solid black" }}
     >
       <Artwork
         rows={rows}

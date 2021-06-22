@@ -1,15 +1,14 @@
 import lodash from "lodash";
-import { random as randomColor } from "@ctrl/tinycolor";
+import TinyColor from "@ctrl/tinycolor";
 
 import { pickRandom, dateString } from "./utils.mjs";
 import { SHAPES } from "./const.mjs";
 
 const { random, range } = lodash;
+const randomColor = TinyColor.random;
 
 const MIN_ROWS = 8;
 const MAX_ROWS = 8;
-const MIN_COLUMNS = 8;
-const MAX_COLUMNS = 12;
 const MIN_COLORS = 2;
 const MAX_COLORS = 7;
 const MIN_ROTATION = 0;
