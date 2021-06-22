@@ -12,15 +12,15 @@ export default function Navigation({ links }) {
           my: 3,
           listStyleType: "none",
           textAlign: "center",
-          overflow: "auto",
         }}
       >
         {links.map(({ label, to }, index) => (
-          <li key={index} sx={{ display: "inline-block", p: 3 }}>
+          <li key={index} sx={{ display: "inline-block" }}>
             <Link
               to={to}
               activeClassName="active"
               sx={{
+                p: 3,
                 position: "relative",
                 color: "text",
                 textDecoration: "none",
@@ -30,7 +30,7 @@ export default function Navigation({ links }) {
                 "&.active:after": {
                   content: "' '",
                   position: "absolute",
-                  top: ({ space }) => space[1] * 5,
+                  top: ({ space }) => space[1] * 9,
                   left: ({ space }) => `calc(50% - ${space[1] / 2}px)`,
                   width: 1,
                   height: 1,

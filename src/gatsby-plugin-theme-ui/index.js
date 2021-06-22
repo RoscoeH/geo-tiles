@@ -12,7 +12,8 @@ const theme = {
     background: "#ffffff",
     primary: "#d20606",
     secondary: "#9bf6ff",
-    muted: "rgba(255, 255, 255, 0.05)",
+    muted: "rgba(0, 0, 0, 0.1)",
+    muted2: "rgba(0, 0, 0, 0.05)",
   },
   fonts: {
     body: '"Rubik", system-ui, -apple-system, sans-serif',
@@ -126,6 +127,12 @@ const theme = {
       },
       "& > *": {
         mr: 1,
+      },
+    },
+    icon: {
+      bg: "muted2",
+      "&:hover": {
+        bg: "muted",
       },
     },
   },
