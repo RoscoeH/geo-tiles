@@ -1,0 +1,391 @@
+{
+  "date": "2021-06-19",
+  "rows": 8,
+  "columns": 8,
+  "cells": [
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#db9b6e",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#d58af2",
+      "color2": "#0c5494"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#d6e813",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#b3d433",
+      "color2": "#d6e813"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#0c5494"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#9dfaab",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#db9b6e",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#db9b6e",
+      "color2": "#0c5494"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#9dfaab",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#0c5494",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#d58af2",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#d58af2",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#49eb21",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#d6e813",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#0c5494",
+      "color2": "#0c5494"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#d58af2",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#b3d433",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#d58af2",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#0c5494",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#49eb21",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#0c5494",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#d58af2",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#db9b6e",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#0c5494",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#0c5494",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#b3d433",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#0c5494",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#d6e813",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#49eb21",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#b3d433",
+      "color2": "#d6e813"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#b3d433",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#9dfaab",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#db9b6e",
+      "color2": "#d6e813"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#0c5494",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#db9b6e",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#0c5494",
+      "color2": "#d6e813"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#d58af2",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#d58af2",
+      "color2": "#0c5494"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#49eb21",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#b3d433",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#b3d433",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#b3d433",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 3,
+      "color": "#d6e813",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#db9b6e",
+      "color2": "#0c5494"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#d58af2",
+      "color2": "#d6e813"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#d6e813",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#db9b6e",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#49eb21",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#d58af2",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#d6e813"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#9dfaab",
+      "color2": "#d58af2"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#0c5494",
+      "color2": "#9dfaab"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#9dfaab",
+      "color2": "#db9b6e"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#49eb21",
+      "color2": "#b3d433"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#b3d433",
+      "color2": "#d6e813"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 2,
+      "color": "#0c5494",
+      "color2": "#0c5494"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 0,
+      "color": "#9dfaab",
+      "color2": "#49eb21"
+    },
+    {
+      "shape": "triangle",
+      "rotate": 1,
+      "color": "#d58af2",
+      "color2": "#db9b6e"
+    }
+  ]
+}
