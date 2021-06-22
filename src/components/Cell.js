@@ -1,8 +1,7 @@
 /** @jsxImportSource theme-ui */
 import PropTypes from "prop-types";
 
-import { SHAPES, ROTATIONS, POSITIONS } from "../core/const";
-import { pickRandom } from "../core/utils";
+import { SHAPES, ROTATIONS } from "../core/const";
 
 const DEFAULT_SIZE = 128;
 const DEFAULT_ANGLE = 90;

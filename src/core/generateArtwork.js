@@ -15,17 +15,17 @@ const MAX_COLORS = 7;
 const MIN_ROTATION = 0;
 const MAX_ROTATION = 3;
 
-export default function generateArtwork() {
+export default function generateArtwork({ shape }) {
   const date = dateString();
   const rows = random(MIN_ROWS, MAX_ROWS);
   const columns = rows;
-  const shape = pickRandom(SHAPES);
+  const effectiveShape = shape || pickRandom(SHAPES);
   const colors = range(random(MIN_COLORS, MAX_COLORS)).map(() =>
     randomColor().toHexString()
   );
 
   const cells = range(rows * columns).map(() => ({
-    shape,
+    shape: effectiveShape,
     rotate: random(MIN_ROTATION, MAX_ROTATION),
     color: pickRandom(colors),
     color2: pickRandom(colors),
