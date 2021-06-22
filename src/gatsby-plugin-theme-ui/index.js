@@ -138,16 +138,7 @@ const theme = {
   },
   links: {
     title: {
-      color: "primary",
-      fontFamily: "heading",
-      fontSize: 3,
       textDecoration: "none",
-      "&:hover": {
-        color: "secondary",
-      },
-      "&:active": {
-        color: "light",
-      },
     },
     heading: {
       color: "text",
