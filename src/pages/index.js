@@ -29,8 +29,8 @@ export default function Index({ data }) {
         </IconButton>
       </Box>
       <Grid columns={listMode === LIST_MODE.grid ? [2, null, null, 3, 4] : 1}>
-        {artworks.map(({ date, rows, columns, cells, fields }) => (
-          <Box>
+        {artworks.map(({ date, rows, columns, cells, fields }, index) => (
+          <Box key={index}>
             {listMode === LIST_MODE.list && (
               <Themed.h2 sx={{ mt: 0 }}>
                 <Link variant="links.heading" as={GatsbyLink} to={fields.slug}>

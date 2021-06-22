@@ -9,7 +9,11 @@ export default function Layout({ children }) {
   return (
     <div>
       <Header title={title} links={navigation} />
-      <main sx={{ maxWidth: 9, m: "0 auto", px: 3 }}>{children}</main>
+      <main
+        sx={{ maxWidth: 9, m: "0 auto", px: [3, null, null, null, null, 0] }}
+      >
+        {children}
+      </main>
     </div>
   );
 }
