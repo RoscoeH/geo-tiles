@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx, Themed, Link } from "theme-ui";
 
 import { useConfig } from "../hooks/useConfig";
 import Header from "./Header";
@@ -14,6 +14,22 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
+      <footer sx={{ fontSize: 0, pt: 3, textAlign: "center" }}>
+        <Themed.p>
+          Want to hire me?{" "}
+          <Link href="https://roscoe.dev/#contact">Let's get in touch</Link>
+        </Themed.p>
+        <Themed.p>
+          Want to support me?{" "}
+          <Link href="https://www.buymeacoffee.com/roscoe.dev">
+            Buy me a coffee
+          </Link>{" "}
+          <span role="img" aria-label="coffee">
+            ☕
+          </span>
+        </Themed.p>
+        <Themed.p>© {new Date().getFullYear()} roscoe.dev</Themed.p>
+      </footer>
     </div>
   );
 }
