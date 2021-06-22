@@ -12,6 +12,7 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    "gatsby-transformer-json",
     "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",

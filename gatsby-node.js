@@ -4,8 +4,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
+  if (node.internal.type === `ArtworksJson`) {
+    const slug = createFilePath({ node, getNode, basePath: `artworks` });
     createNodeField({
       node,
       name: `slug`,
@@ -19,7 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allArtworksJson {
         edges {
           node {
             fields {
@@ -31,10 +31,10 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allArtworksJson.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/Artwork.js`),
+      component: path.resolve(`./src/templates/ArtworkTemplate.js`),
       context: {
         slug: node.fields.slug,
       },

@@ -8,8 +8,6 @@ import { ArtworkSvg as Artwork, SHAPES } from "../components/Artwork";
 const randomColors = () =>
   range(random(2, 7)).map(() => randomColor().toHexString());
 
-console.log("rc", randomColors());
-
 export default {
   title: "Artwork",
   component: Artwork,
