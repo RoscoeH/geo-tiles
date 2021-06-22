@@ -1,6 +1,4 @@
 import React from "react";
-import { random as randomColor } from "@ctrl/tinycolor";
-import { range, random } from "lodash";
 
 import { SHAPES } from "../core/const";
 import { pickRandom } from "../core/utils";

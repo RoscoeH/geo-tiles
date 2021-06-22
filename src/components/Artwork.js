@@ -3,16 +3,7 @@ import PropTypes from "prop-types";
 import { range } from "lodash";
 
 import { ROTATIONS, SHAPES } from "../core/const";
-import { pickRandom } from "../core/utils";
 import Cell from "./Cell";
-
-const DEFAULT_ROWS = 16;
-const DEFAULT_COLS = 16;
-const SHAPE = "triangle";
-const COLORS = ["#EF476F", "#FFD166", "#06D6A0", "#118AB2", "#073B4C"];
-const ANGLES = [0, 90, 180, 270];
-const CANVAS_WIDTH = 100;
-const CANVAS_HEIGHT = 100;
 
 export default function Artwork({
   rows = 8,
@@ -21,6 +12,7 @@ export default function Artwork({
   cellHeight = 64,
   cells,
 }) {
+  console.log(cells);
   return (
     <g>
       {range(rows).map((row) => (
@@ -53,7 +45,7 @@ Artwork.propTypes = {
   colors: PropTypes.arrayOf(PropTypes.string),
   cells: PropTypes.arrayOf(
     PropTypes.shape({
-      shape: PropTypes.oneOf(SHAPE),
+      shape: PropTypes.oneOf(SHAPES),
       color: PropTypes.string,
       color2: PropTypes.string,
       rotate: PropTypes.oneOf(ROTATIONS),

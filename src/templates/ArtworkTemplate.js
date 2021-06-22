@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import { ArtworkSvg as Artwork } from "../components/Artwork";
-// import Layout from "../components/layout"
 
 export default function ArtworkTemplate({
   data: {
@@ -11,13 +10,11 @@ export default function ArtworkTemplate({
 }) {
   console.log(cells);
   return (
-    // <Layout>
     <div>
       <p>{columns}</p>
       <p>{rows}</p>
-      <Artwork />
+      <Artwork rows={rows} columns={columns} cells={cells} />
     </div>
-    // </Layout>
   );
 }
 export const query = graphql`
@@ -28,6 +25,7 @@ export const query = graphql`
       cells {
         shape
         color
+        color2
         rotate
       }
     }

@@ -1,4 +1,4 @@
-/** @jsxImportSource theme-ui */
+import React from "react";
 import PropTypes from "prop-types";
 
 import { SHAPES, ROTATIONS } from "../core/const";
