@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
 import PropTypes from "prop-types";
 
-import { SHAPES, ROTATIONS } from "../core/const";
+import { SHAPES, ROTATIONS, POSITIONS } from "../core/const";
 import { pickRandom } from "../core/utils";
 
 const DEFAULT_SIZE = 128;
@@ -72,12 +72,7 @@ const CELL_TYPES = {
         fill={color2}
         shapeRendering="crispEdges"
       />
-      <circle
-        cx={pickRandom(POSITIONS) * width}
-        cy={pickRandom(POSITIONS) * height}
-        r={width / 8}
-        fill={color}
-      />
+      <circle cx={width / 3} cy={height / 3} r={width / 8} fill={color} />
     </g>
   ),
   skewed: ({ width, height, color, color2 }) => (

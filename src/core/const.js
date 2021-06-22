@@ -1,3 +1,4 @@
+export const ROTATIONS = [0, 1, 2, 3];
 export const SHAPES = [
   "dot",
   "curved",
@@ -10,5 +11,3 @@ export const SHAPES = [
   "smallCircle",
   "smallTriangle",
 ];
-
-export const ROTATIONS = [0, 1, 2, 3];
