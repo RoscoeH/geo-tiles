@@ -8,7 +8,6 @@ export default function ArtworkTemplate({
     artworksJson: { rows, columns, cells },
   },
 }) {
-  console.log(cells);
   return (
     <div>
       <p>{columns}</p>

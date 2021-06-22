@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { range } from "lodash";
 
-import { ROTATIONS, SHAPES } from "../core/const";
+import { ROTATIONS, SHAPES } from "../core/const.mjs";
 import Cell from "./Cell";
 
 export default function Artwork({
@@ -12,7 +12,6 @@ export default function Artwork({
   cellHeight = 64,
   cells,
 }) {
-  console.log(cells);
   return (
     <g>
       {range(rows).map((row) => (
