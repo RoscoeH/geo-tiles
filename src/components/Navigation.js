@@ -7,10 +7,16 @@ export default function Navigation({ links }) {
   return (
     <nav>
       <ul
-        sx={{ p: 0, mt: 3, mb: 4, listStyleType: "none", textAlign: "center" }}
+        sx={{
+          p: 0,
+          my: 3,
+          listStyleType: "none",
+          textAlign: "center",
+          overflow: "auto",
+        }}
       >
         {links.map(({ label, to }, index) => (
-          <li key={index} sx={{ display: "inline", p: 2 }}>
+          <li key={index} sx={{ display: "inline-block", p: 3 }}>
             <Link
               to={to}
               activeClassName="active"
@@ -18,6 +24,9 @@ export default function Navigation({ links }) {
                 position: "relative",
                 color: "text",
                 textDecoration: "none",
+                "&:hover": {
+                  color: "primary",
+                },
                 "&.active:after": {
                   content: "' '",
                   position: "absolute",

@@ -10,7 +10,7 @@ const theme = {
     dark: "#000000",
     text: "#333333",
     background: "#ffffff",
-    primary: "blue",
+    primary: "#d20606",
     secondary: "#9bf6ff",
     muted: "rgba(255, 255, 255, 0.05)",
   },
@@ -142,60 +142,11 @@ const theme = {
         color: "light",
       },
     },
-    button: {
-      display: "inline-flex",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "primary",
-      border: "default",
-      py: 1,
-      px: 2,
+    heading: {
+      color: "text",
       textDecoration: "none",
-      borderRadius: 3,
       "&:hover": {
-        color: "secondary",
-      },
-      "&:active": {
-        color: "light",
-      },
-      "& > *": {
-        mr: 1,
-      },
-    },
-  },
-  cards: {
-    primary: {
-      bg: "muted",
-      p: "3",
-      borderRadius: 4,
-    },
-  },
-  forms: {
-    input: {
-      outline: "none",
-      bg: "muted",
-      border: "none",
-      borderRadius: 3,
-      mb: 2,
-      "&:hover": {
-        boxShadow: (t) => `inset 0 0 0 1px ${t.colors.secondary}`,
-      },
-      "&:focus": {
-        boxShadow: (t) => `inset 0 0 0 1px ${t.colors.light}`,
-      },
-    },
-    textarea: {
-      fontFamily: "body",
-      outline: "none",
-      bg: "muted",
-      border: "none",
-      borderRadius: 3,
-      mb: 2,
-      "&:hover": {
-        boxShadow: (t) => `inset 0 0 0 1px ${t.colors.secondary}`,
-      },
-      "&:focus": {
-        boxShadow: (t) => `inset 0 0 0 1px ${t.colors.light}`,
+        color: "primary",
       },
     },
   },
