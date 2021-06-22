@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SHAPES } from "../core/const";
+import { SHAPES } from "../core/const.mjs";
 import { pickRandom } from "../core/utils";
 import generateArtwork from "../core/generateArtwork";
 import { ArtworkSvg as Artwork } from "../components/Artwork";

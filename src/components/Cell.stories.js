@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SHAPES, ROTATIONS } from "../core/const";
+import { SHAPES, ROTATIONS } from "../core/const.mjs";
 import { CellSvg as Cell } from "./Cell";
 
 export default {

@@ -1,4 +1,4 @@
-import random from "lodash/random";
+import random from "lodash/random.js";
 
 export function pickRandom(array) {
   return array[random(array.length - 1)];

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { SHAPES, ROTATIONS } from "../core/const";
+import { SHAPES, ROTATIONS } from "../core/const.mjs";
 
 const DEFAULT_SIZE = 128;
 const DEFAULT_ANGLE = 90;
