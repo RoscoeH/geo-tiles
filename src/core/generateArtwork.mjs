@@ -6,8 +6,8 @@ import { SHAPES } from "./const.mjs";
 const { pickRandom, dateString, generateColors } = utils;
 const { random, range } = lodash;
 
-const MIN_ROWS = 8;
-const MAX_ROWS = 8;
+const MIN_ROWS = 4;
+const MAX_ROWS = 12;
 const MIN_COLORS = 2;
 const MAX_COLORS = 7;
 const MIN_ROTATION = 0;
