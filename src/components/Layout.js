@@ -18,7 +18,12 @@ export default function Layout({ children }) {
       </Helmet>
       <Header title={title} subtitle={subtitle} links={navigation} />
       <main
-        sx={{ maxWidth: 9, m: "0 auto", px: [3, null, null, null, null, 0] }}
+        sx={{
+          maxWidth: 9,
+          m: "0 auto",
+          pt: 4,
+          px: [3, null, null, null, null, 0],
+        }}
       >
         {children}
       </main>
