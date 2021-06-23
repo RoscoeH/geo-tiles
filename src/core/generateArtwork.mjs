@@ -14,7 +14,7 @@ const MIN_ROTATION = 0;
 const MAX_ROTATION = 3;
 
 export default function generateArtwork(options) {
-  const date = dateString();
+  const date = (options && options.date) || dateString();
   const rows = random(MIN_ROWS, MAX_ROWS);
   const columns = rows;
   const effectiveShape = (options && options.shape) || pickRandom(SHAPES);

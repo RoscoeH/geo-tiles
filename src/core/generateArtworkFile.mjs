@@ -2,8 +2,13 @@ import fs from "fs";
 import generateArtwork from "./generateArtwork.mjs";
 import { dateString } from "./utils.js";
 
-const date = dateString();
-const artwork = generateArtwork();
-const fileData = JSON.stringify(artwork);
+const args = process.argv.slice(2);
+const days = parseInt(args[0] || "1");
 
-fs.writeFileSync(`src/artworks/${date}.json`, fileData);
+for (let i = 0; i < days; i++) {
+  const date = dateString(-i);
+  console.log(`Generating artwork for ${date}`);
+  const artwork = generateArtwork({ date });
+  const fileData = JSON.stringify(artwork);
+  fs.writeFileSync(`src/artworks/${date}.json`, fileData);
+}
