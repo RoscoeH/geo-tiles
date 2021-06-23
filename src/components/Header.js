@@ -20,7 +20,7 @@ export default function Header({ title, subtitle, links }) {
       {subtitle && (
         <small
           sx={{
-            display: "block",
+            display: "inline-block",
             color: "primary",
             animation: `${pulse} 0.5s infinite linear alternate-reverse`,
           }}
