@@ -1,0 +1,12 @@
+name: Generate Artwork Daily
+on:
+  schedule:
+  - cron: "10 * * * *"
+  workflow_dispatch:
+jobs:
+  generate_artwork:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate Artwork
+        run: yarn generate-artwork
