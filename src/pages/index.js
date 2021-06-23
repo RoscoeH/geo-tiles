@@ -1,5 +1,13 @@
 /** @jsx jsx */
-import { jsx, Themed, Box, Grid, Link, IconButton } from "theme-ui";
+import {
+  jsx,
+  Themed,
+  Box,
+  Grid,
+  Link,
+  IconButton,
+  useColorMode,
+} from "theme-ui";
 import { useState } from "react";
 import { Link as GatsbyLink } from "gatsby";
 
@@ -13,20 +21,36 @@ const LIST_MODE = {
   list: "list",
 };
 
-export default function Index({ data }) {
+export default function Index() {
+  const [colorMode, setColorMode] = useColorMode();
   const [listMode, setListMode] = useState(LIST_MODE.list);
   const artworks = useArtworks();
 
-  function handleModeClick() {
+  function handleViewModeClick() {
     setListMode(listMode === LIST_MODE.grid ? LIST_MODE.list : LIST_MODE.grid);
   }
 
+  function handleColorModeClick() {
+    setColorMode(isLightMode ? "dark" : "default");
+  }
+
   const isGrid = listMode === LIST_MODE.grid;
+  const isLightMode = colorMode === "default";
 
   return (
     <Layout>
-      <Box sx={{ textAlign: "right" }}>
-        <IconButton onClick={handleModeClick}>
+      <Box
+        sx={{
+          textAlign: "right",
+          "& > *:not(:last-child)": {
+            mr: 2,
+          },
+        }}
+      >
+        <IconButton onClick={handleColorModeClick}>
+          <Icon icon={isLightMode ? "darkMode" : "lightMode"} />
+        </IconButton>
+        <IconButton onClick={handleViewModeClick}>
           <Icon icon={isGrid ? "list" : "grid"} />
         </IconButton>
       </Box>

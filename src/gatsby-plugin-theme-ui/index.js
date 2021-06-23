@@ -1,4 +1,5 @@
 import "typeface-rubik";
+import { alpha } from "@theme-ui/color";
 
 const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512, 640, 720, 960],
@@ -14,6 +15,15 @@ const theme = {
     secondary: "#9bf6ff",
     muted: "rgba(0, 0, 0, 0.1)",
     muted2: "rgba(0, 0, 0, 0.05)",
+    modes: {
+      dark: {
+        background: "#333333",
+        text: "#ffffff",
+        primary: "#4cfccd",
+        muted: "rgba(255, 255, 255, 0.1)",
+        muted2: "rgba(255, 255, 255, 0.05)",
+      },
+    },
   },
   fonts: {
     body: '"Rubik", system-ui, -apple-system, sans-serif',
@@ -133,6 +143,9 @@ const theme = {
       bg: "muted2",
       "&:hover": {
         bg: "muted",
+      },
+      "&:active": {
+        bg: alpha("primary", 0.1),
       },
     },
   },

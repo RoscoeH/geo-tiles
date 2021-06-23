@@ -14,3 +14,9 @@ Grid.args = { icon: "grid" };
 
 export const List = Template.bind({});
 List.args = { icon: "list" };
+
+export const DarkMode = Template.bind({});
+DarkMode.args = { icon: "darkMode" };
+
+export const LightMode = Template.bind({});
+LightMode.args = { icon: "lightMode" };
