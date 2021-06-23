@@ -6,7 +6,9 @@ export function useConfig() {
       site {
         siteMetadata {
           title
+          subtitle
           description
+          url
           navigation {
             label
             to

@@ -6,13 +6,17 @@ import { useConfig } from "../hooks/useConfig";
 import Header from "./Header";
 
 export default function Layout({ children }) {
-  const { title, navigation } = useConfig();
+  const { title, subtitle, description, url, navigation } = useConfig();
   return (
     <HelmetProvider>
       <Helmet titleTemplate="%s | GeoTiles">
         <title>Home</title>
+        <meta name="description" content={description} />
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
       </Helmet>
-      <Header title={title} links={navigation} />
+      <Header title={title} subtitle={subtitle} links={navigation} />
       <main
         sx={{ maxWidth: 9, m: "0 auto", px: [3, null, null, null, null, 0] }}
       >

@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "GeoTiles",
-    description: "New artwork daily!",
+    subtitle: "New artwork daily!",
+    description:
+      "GeoTiles is an experimental artwork. Each day a new artwork is generated and published automatically.",
+    url: "https://geotiles.roscoe.dev",
     navigation: [
       { label: "Home", to: "/" },
       { label: "About", to: "/about" },
