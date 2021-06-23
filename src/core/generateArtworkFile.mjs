@@ -1,6 +1,6 @@
 import fs from "fs";
 import generateArtwork from "./generateArtwork.mjs";
-import { dateString } from "./utils.mjs";
+import { dateString } from "./utils.js";
 
 const date = dateString();
 const artwork = generateArtwork();
