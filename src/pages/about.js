@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Themed, Link, Box, Grid } from "theme-ui";
 import { Link as GatsbyLink } from "gatsby";
+import { Helmet } from "react-helmet-async";
 
 import { SHAPES } from "../core/const";
 import { generateColors } from "../core/utils";
@@ -12,6 +13,9 @@ export default function About() {
   const { title } = useConfig();
   return (
     <Layout>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
       <Themed.p>
         <Link as={GatsbyLink} to="/">
           {title}

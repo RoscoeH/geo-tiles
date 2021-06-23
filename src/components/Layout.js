@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Themed, Link } from "theme-ui";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { useConfig } from "../hooks/useConfig";
 import Header from "./Header";
@@ -7,7 +8,10 @@ import Header from "./Header";
 export default function Layout({ children }) {
   const { title, navigation } = useConfig();
   return (
-    <div>
+    <HelmetProvider>
+      <Helmet titleTemplate="%s | GeoTiles">
+        <title>Home</title>
+      </Helmet>
       <Header title={title} links={navigation} />
       <main
         sx={{ maxWidth: 9, m: "0 auto", px: [3, null, null, null, null, 0] }}
@@ -30,6 +34,6 @@ export default function Layout({ children }) {
         </Themed.p>
         <Themed.p>© {new Date().getFullYear()} roscoe.dev</Themed.p>
       </footer>
-    </div>
+    </HelmetProvider>
   );
 }
