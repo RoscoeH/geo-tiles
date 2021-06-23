@@ -60,6 +60,7 @@ export const ArtworkSvg = ({ size = 64, rows = 8, columns = 8, cells }) => {
     <svg
       width="100%"
       viewBox={`0 0 ${cellWidth * columns} ${cellHeight * rows}`}
+      sx={{ display: "block" }}
     >
       <Artwork
         rows={rows}

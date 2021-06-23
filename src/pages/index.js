@@ -21,17 +21,19 @@ export default function Index({ data }) {
     setListMode(listMode === LIST_MODE.grid ? LIST_MODE.list : LIST_MODE.grid);
   }
 
+  const isGrid = listMode === LIST_MODE.grid;
+
   return (
     <Layout>
       <Box sx={{ textAlign: "right" }}>
         <IconButton onClick={handleModeClick}>
-          <Icon icon={listMode === LIST_MODE.grid ? "list" : "grid"} />
+          <Icon icon={isGrid ? "list" : "grid"} />
         </IconButton>
       </Box>
-      <Grid columns={listMode === LIST_MODE.grid ? [2, null, null, 3, 4] : 1}>
+      <Grid columns={isGrid ? [2, null, null, 3, 4] : 1} gap={isGrid ? 3 : 4}>
         {artworks.map(({ date, rows, columns, cells, fields }, index) => (
           <Box key={index}>
-            {listMode === LIST_MODE.list && (
+            {!isGrid && (
               <Themed.h2 sx={{ mt: 0 }}>
                 <Link variant="links.heading" as={GatsbyLink} to={fields.slug}>
                   {date}
