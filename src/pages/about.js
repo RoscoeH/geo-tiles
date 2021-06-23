@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Themed, Link, Box, Grid } from "theme-ui";
 import { Link as GatsbyLink } from "gatsby";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 import { SHAPES } from "../core/const";
 import { generateColors } from "../core/utils";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Themed } from "theme-ui";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
 import { ArtworkSvg as Artwork } from "../components/Artwork";
