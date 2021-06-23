@@ -16,6 +16,7 @@ export function useArtworks() {
               shape
               color
               color2
+              rotate
             }
           }
         }
