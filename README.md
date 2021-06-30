@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://catsincups.roscoe.dev">
+  <a href="https://geotiles.roscoe.dev">
     <img alt="GeoTiles" src="./src/images/icon.png" width="64" />
   </a>
 </p>
